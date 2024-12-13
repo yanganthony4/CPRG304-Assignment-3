@@ -1,6 +1,10 @@
 package implementations;
 
-public class BSTreeNode<E> {
+import java.io.Serializable; // Import Serializable interface
+
+public class BSTreeNode<E> implements Serializable {
+    private static final long serialVersionUID = 1L; // Add serialVersionUID for version control
+
     private E element;
     private BSTreeNode<E> left;
     private BSTreeNode<E> right;
@@ -45,4 +49,3 @@ public class BSTreeNode<E> {
         this.height = height;
     }
 }
-
